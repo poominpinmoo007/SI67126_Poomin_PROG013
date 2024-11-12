@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style_WS5.css" />
+</head>
+
+<body>
+
+    <body class="bg-light">
+        <div class="container-fluid p-4 d-flex justify-content-center align-items-center flex-column">
+            <div class="card p-4 w-75 mb-3">
+                <form class=" ">
+                    <h1>รายงานขอวงเงินเครดิต</h1>
+                    <div class="form-group row">
+                        <label for="typeCustomer" class="col-2 col-form-label">ประเภทลูกค้า:</label>
+                        <div class="col-10 p-1">
+                            <select class="form-control" name="typeCustomer" id="">
+                                <option selected>กรุณาเลือกรายการ</option>
+                                <option value="ทั้งหมด">ทั้งหมด</option>
+                                <option value="บุคคลธรรมดา">บุคคลธรรมดา</option>
+                                <option value="นิติบุคคล">นิติบุคคล</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="IDcustomer" class="col-2 col-form-label">เลขที่สมาชิก:</label>
+                        <div class="col-5 p-1 d-flex justify-content-center align-items-center">
+                            <input class="form-control" type="text" placeholder="ตั้งแต่">
+                        </div>
+                        <div class="col-5 p-1 d-flex justify-content-center align-items-center">
+                            <input class="form-control" type="text" placeholder="ถึง">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-2 col-form-label">วันที่ขออนุมัติ:</label>
+                        <div class="col-5 p-1">
+                            <input class="form-control" type="date" placeholder="ตั้งแต่" min="2024/11/12">
+                        </div>
+                        <div class="col-5 p-1">
+                            <input class="form-control" type="date" placeholder="ถึง" max="2024/12/12">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="status" class="col-2 col-form-label">สถานะ:</label>
+                        <div class="col-10 p-1">
+                            <select class="form-control" name="status" id="status">
+                                <option selected>กรุณาเลือกรายการ</option>
+                                <option value="ทั้งหมด">ทั้งหมด</option>
+                                <option value="อนุมัติ">อนุมัติ</option>
+                                <option value="รออนุมัติ">รออนุมัติ</option>
+                                <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button type="submit" class="btn btn-success px-5">Report</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container_table card p-4">
+                <h3>รายงานขอวงเงินเครดิต</h3>
+                <div class="row">
+                    <div class="col-4 d-flex">
+                        <label for="">ประเภทลูกค้า:</label>
+                        <p class="mx-5 my-0">ทั้งหมด</p>
+                    </div>
+                    <div class="col-4 d-flex">
+                        <label for="">เลขสมาชิก:</label>
+                        <p class="mx-5 my-0">ทั้งหมด</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 d-flex">
+                        <label for="">วันที่ขออนุมัติ:</label>
+                        <p class="mx-5 my-0">ทั้งหมด</p>
+                    </div>
+                    <div class="col-4 d-flex">
+                        <label for="">สถานะ:</label>
+                        <p class="mx-5 my-0">ทั้งหมด</p>
+                    </div>
+                </div>
+                <div class="table-responsive my-2">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">ประเภทลูกค้า</th>
+                                <th rowspan="2">เลขที่รายการ</th>
+                                <th rowspan="2">เลขที่รายการ</th>
+                                <th rowspan="2">เลขที่รายการ</th>
+                                <th rowspan="2">เลขที่สมาชิก</th>
+                                <th rowspan="2">ชื่อ-สกุล</th>
+                                <th rowspan="2">วันที่ขออนุมัติ</th>
+                                <th rowspan="2">ประเภทการส่งพัสดุ</th>
+                                <th rowspan="2">ความถี่ในการใช้บริการ</th>
+                                <th rowspan="2">ประมาณการค่าส่งต่อเดือน</th>
+                                <th rowspan="2">ประเภทการขอ</th>
+                                <th rowspan="2">เหตุผลที่ขอเพิ่ม</th>
+                                <th colspan="6">ค่าส่งจริง 6 เดือนที่ผ่านมา (บาท)</th>
+                                <th rowspan="1">สถานะ</th>
+                                <th rowspan="1">ผู้อนุมัติ</th>
+                                <th rowspan="1">วันที่มีผล</th>
+                                <th rowspan="1">เงื่อนไขการชำระเงิน</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>รออนุมัติ</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>ขอใหม่</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>อนุมัติ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>ขยายวงเงิน</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>ไม่อนุมัติ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+        </div>
+    </body>
+</body>
+
+</html>

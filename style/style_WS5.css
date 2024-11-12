@@ -1,0 +1,13 @@
+
+th,td{
+    text-align: center;
+}
+
+label{
+    margin: 0;
+}
+
+.container_table{
+    overflow-x:auto
+    
+}

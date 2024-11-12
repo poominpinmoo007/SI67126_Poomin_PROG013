@@ -1,0 +1,68 @@
+body{
+    background-color: #eeee;
+}
+
+table,tr,th,td{
+    border: 1px solid;
+} 
+
+th,td{
+    text-align: center;
+    padding: 10px;
+}
+
+.icon_header{
+    width: 50px;
+    margin: 0 10px;
+}
+
+.btn_search{
+    border: none;
+    padding: 4px 15px;
+    background-color: rgb(0, 167, 47);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin: 0 5px;
+}
+
+.btn_add{
+    border: none;
+    padding: 4px 15px;
+    background-color: rgb(0, 142, 167);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.tbody_color{
+    background-color: antiquewhite;
+}
+
+.thead_color{
+    background-color: rgb(255, 145, 0);
+}
+
+.btn_delete{
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.btn_edit{
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(0, 38, 255);
+    cursor: pointer;
+}
+
+label{
+    margin: 0;
+}
+
+.license{
+    margin-right:10px ;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WH2_2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body class="bg-ligh">
+    <div class="container-fluid p-4">
+        <h1 class="mb-4">
+            <i class="fas fa-mug-hot"></i> Please Order a cup of coffee
+        </h1>
+        <form action="">
+            <div class="mb-4">
+                <div class="row">
+                    <div class="col-2">
+                        <label for="name">Member name:</label>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-2">
+                        <input type="text" id="name" name="name" maxlength="25" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="password">Member password:</label>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-2">
+                        <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8}" maxlength="8" required/>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="m-0">Choose your cup</p>
+                <ul>
+                    <li>
+                        <input type="radio" name="choose" id="choose" value="HouseMiend" required/>
+                        <label class="m-0" for="HouseMiend" >House Miend,$1.49, A smoot, mind blend of coffees of
+                            Mexico,Bolivia and Guatemaia.</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="choose" id="choose" value="MochaCafeLette" required/>
+                        <label class="m-0" for="MochaCafeLette" >Mocha Cafe Lette,$2.35, Espresso steamd milk and chocolate
+                            syrup.</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="choose" id="choose" value="Cappuccion" required/>
+                        <label class="m-0" for="Cappuccion" >Cappuccion,35 baht, A mizture of espresso. steamed milk and
+                            foam.</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="choose" id="choose" value="ThaiTea" required/>
+                        <label class="m-0" for="ThaiTea" >Thai Tea,25 baht, A drink made with black tea, condensed
+                            milk.</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-3">
+                <fieldset class="border p-2">
+                    <legend class="w-auto">Extra:</legend>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Whipped Cream</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Sweet</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Shost</label>
+                </fieldset>
+            </div>
+            <div class="d-flex flex-column">
+                <h5 for="">Special Request</h5>
+                <div>
+                    <textarea name="" id="" rows="5" cols="100"></textarea>
+                </div>
+                <div class="mt-2">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                    <button class="btn btn-info" type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
